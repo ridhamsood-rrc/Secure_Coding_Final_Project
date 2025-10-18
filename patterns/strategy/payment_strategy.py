@@ -11,7 +11,7 @@ class PaymentStrategy(ABC):
     """"""
 
     @abstractmethod
-    def process_payment(account: BillingAccount, payee: Payee, amount: float) -> str:
+    def process_payment(self, account: BillingAccount, payee: Payee, amount: float) -> str:
         """
         """
         pass
