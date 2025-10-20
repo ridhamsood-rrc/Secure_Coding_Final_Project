@@ -22,6 +22,6 @@ class PenaltyStrategy(PaymentStrategy):
             penalty = 10.0
             account.add_balance(payee, penalty)
             new_balance = account.get_balance(payee)
-            return (f"Insufficient balance. Added penalty fee of $10.00. \n"
+            return (f"Insufficient balance. Added penalty fee of $10.00. "
                     +f"New balance: ${new_balance:.2f}."
             )
