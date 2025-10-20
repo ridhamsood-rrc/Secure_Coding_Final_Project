@@ -14,7 +14,7 @@ class PartialPaymentStrategy(PaymentStrategy):
         """This method process the payment which is partially paid.
 
         Args:
-        account(BillingAccount): Represents the billing account
+        account(BillingAccount): Represents the billing account.
         payee(Payee): Represents to which the amount will be paid.
         amount(float): Represents the amount to be paid to the payee.
 
