@@ -34,9 +34,11 @@ def strategy():
     # 2. Use the Payment object's pay_bill method to pay the ELECTRICITY
     # bill with an amount that does not pay off the entire balance shown 
     # above - print the result of the pay_bill method.
-    
-    print(penalty.pay_bill(account, Payee.ELECTRICITY, 150.0))
-    print()
+    try:
+        print(penalty.pay_bill(account, Payee.ELECTRICITY, 150.0))
+        print()
+    except ValueError as e:
+        print(e)
     
     # 3. Create a Payment object with a PartialPaymentStrategy payment 
     # strategy.
@@ -45,15 +47,21 @@ def strategy():
     # 4. Use the Payment object's pay_bill method to pay the TELEPHONE 
     # bill with an amount that does not pay off the entire balance shown
     # above - print the result of the pay_bill method.
-    print(partial.pay_bill(account, Payee.TELEPHONE, 50.00))
-    print()
+    try:
+        print(partial.pay_bill(account, Payee.TELEPHONE, 50.00))
+        print()
+    except ValueError as e:
+        print(e)
 
     # 5. Using the Payment object created in step 3, make another 
     # payment for the TELEPHONE bill with an amount that pays off the 
     # remainder of the balance - print the result of the pay_bill 
     # method.
-    print(partial.pay_bill(account, Payee.TELEPHONE, 100.00)) 
-    print()
+    try:
+        print(partial.pay_bill(account, Payee.TELEPHONE, 100.00)) 
+        print()
+    except ValueError as e:
+        print(e)
 
     # 6. Print the BillingAccount object to show the updated balances 
     # for each of the payees.
