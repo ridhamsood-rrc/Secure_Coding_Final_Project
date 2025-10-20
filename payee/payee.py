@@ -1,6 +1,6 @@
 """This module defines the Payee enumeration."""
 
-__author__ = "ACE Faculty"
+__author__ = "Ridham Sood"
 __version__ = "1.0.0"
 __credits__ = ""
 
