@@ -7,7 +7,7 @@ from billing_account.billing_account import BillingAccount
 from payee.payee import Payee
 from patterns.strategy.payment_strategy import PaymentStrategy
 
-class Payment(PaymentStrategy):
+class Payment():
     """"""
 
     def __init__(self, strategy: PaymentStrategy):
@@ -21,4 +21,4 @@ class Payment(PaymentStrategy):
     def pay_bill(self, account: BillingAccount, payee: Payee, amount: float) -> str:
         """"""
 
-        return self.__strategy.process_payment(account, payee, amont)
+        return self.__strategy.process_payment(account, payee, amount)
