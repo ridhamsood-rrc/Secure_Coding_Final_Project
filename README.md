@@ -1,8 +1,6 @@
-# Intermediate Software Development Activity 3
+# Secure Coding Final Project
 
-This activity will help to reinforce learning of the Module 3 concepts of:
-
-- Design Patterns
+This projecy will help to reinforce learning of all the workflows and vulnerabilities found the workflows.
 
 ## Author
 
