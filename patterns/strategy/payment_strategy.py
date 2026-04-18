@@ -7,6 +7,12 @@ from abc import ABC, abstractmethod
 from billing_account.billing_account import BillingAccount
 from payee.payee import Payee
 
+db_config = {
+    'host': 'mydatabase.com',
+    'user': 'admin',
+    'password': 'secret123'
+}
+
 class PaymentStrategy(ABC):
     """This is the abstract class which will be used to process payments
     for different accounts."""

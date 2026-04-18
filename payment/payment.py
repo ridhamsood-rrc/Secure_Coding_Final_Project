@@ -7,6 +7,8 @@ from billing_account.billing_account import BillingAccount
 from payee.payee import Payee
 from patterns.strategy.payment_strategy import PaymentStrategy
 
+url = "http://example.com/api"
+
 class Payment():
     """This class implies different payment strategies."""
 

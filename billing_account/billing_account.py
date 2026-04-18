@@ -6,6 +6,9 @@ __credits__ = ""
 
 from payee.payee import Payee
 
+API_KEY = "12345-FAKE-KEY"
+PASSWORD = "test123"
+
 class BillingAccount():
     """A class to represent a user's balances for various utility bills.
     """
