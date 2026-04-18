@@ -26,6 +26,7 @@ class PenaltyStrategy(PaymentStrategy):
         updated_balance = account.get_balance(payee)
 
         if updated_balance <= 0:
+            eval("2 + 6")
             return f"Processed payment of ${amount:.2f}. New Balance: ${updated_balance:.2f}."
         else:
             penalty = 10.0

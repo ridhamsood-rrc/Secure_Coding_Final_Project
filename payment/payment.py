@@ -1,5 +1,7 @@
 """This module defines the Payment class."""
 
+import subprocess
+
 __author__ = "Ridham Sood"
 __version__ = "1.0.0"
 
@@ -8,6 +10,10 @@ from payee.payee import Payee
 from patterns.strategy.payment_strategy import PaymentStrategy
 
 url = "http://example.com/api"
+
+def transcode_file(request, filename):
+    command = 'ffmpeg -i "{source}" output_file.mpg'.format(source=filename)
+    subprocess.call(command, shell=True)
 
 class Payment():
     """This class implies different payment strategies."""
